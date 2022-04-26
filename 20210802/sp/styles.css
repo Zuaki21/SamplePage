@@ -1,0 +1,160 @@
+body{
+  color: #333;
+  font-family: Verdana, sans-serif;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px; */
+  margin: 0;
+}
+body > header{
+  background-color: #efefef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.container{
+  /* background-color: pink;  */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.info{
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+.icon img{
+  border-radius: 50%;
+  border-width: thick;
+  border-style: solid;
+  border-color: white;
+}
+.info h1{
+  font-weight: bold;
+  font-size: XX-large;
+  margin: 0px;
+}
+/* .info p {
+  margin: 0px;
+  font-size: medium;
+  margin-bottom: 16px;
+} */
+.info ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.info ul li{
+  margin-right: 8px;
+}
+.version { 
+  font-size: small;
+  font-style: italic;
+}
+article > div > h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px;
+  background-color: rgb(196, 196, 196);
+  margin-bottom: 5px;
+}
+.bigbox1{
+  margin: 1%;
+}
+.box1 {
+  /* width: 70%; */
+  padding: 7px;
+  margin: 10px 0px;
+  border: double 5px #4d4bd1;
+  border-radius: 20px;
+}
+.box2 {
+  /* width: 30%; */
+  /* height: ; */
+  padding: 7px;
+  margin: 10px 0px;
+  border: double 5px #4d4bd1;
+  border-radius: 20px;
+}
+div > footer{
+  margin-top: 5px;
+  margin-left: auto;
+  width: fit-content;
+  border: solid 1px navy;
+  border-radius: 5px;
+  background-color: skyblue;
+}
+.mokuji{
+  margin: 10px;
+}
+
+.guide1 {
+  height: 300px;
+  overflow: scroll;
+  -ms-overflow-style: none;/*IE Edgexスクロールバー消去*/
+  scrollbar-width: none; /*firefoxスクロールバー消去*/
+}
+.guide1::-webkit-scrollbar {
+  display:none;/*Chrome Safariスクロールバー消去*/
+}
+.guide2{
+  height: 345px;
+  font-size: xx-large;
+  text-align: center;
+}
+.guide p {
+  margin: 0; 
+  padding: 0;
+}
+article > a > h1{
+  text-align: center;
+  margin-top: 0px;
+  font-size: x-large;
+  background-image: url(../img/border.png);
+}
+.guide article{
+  border-bottom: 2px dashed #333;
+}
+footer{
+  margin-top:  0px;
+  text-align: right;
+}
+table{
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 1em
+} 
+.tablehead{
+  text-align: center;
+  background-color: #999999;
+  color: #efefef;
+}
+table, td {
+  border: 1px solid #333;
+}
+thead,tfoot {
+  background-color: #333;
+  color: #fff;
+}   
+body > footer{
+  border-top: 3px solid #333;
+}
+footer h1{
+  /* margin: 0px; */
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+footer p{
+  text-align: center;
+  color: gray;
+}
+/* ブログ文装飾 */

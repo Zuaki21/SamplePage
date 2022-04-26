@@ -1,0 +1,127 @@
+body{
+  color: #333;
+  font-family: Verdana, sans-serif;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px; */
+  margin: 0;
+}
+body > header{
+  background-color: #efefef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.container{
+  /* background-color: pink;  */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+} 
+.info{
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+.icon img{
+  border-radius: 50%;
+  border-width: thick;
+  border-style: solid;
+  border-color: white;
+}
+.info h1{
+  font-weight: bold;
+  font-size: XX-large;
+  margin: 0px;
+}
+/* .info p {
+  margin: 0px;
+  font-size: medium;
+  margin-bottom: 16px;
+} */
+.info ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.info ul li{
+  margin-right: 8px;
+}
+.version { 
+  font-size: small;
+}
+.guide {
+  padding: 0.5em 1em;
+  margin: 2px 0;
+  border: double 5px #4d4bd1;
+  border-radius: 20px;
+  height: 300px;
+  overflow: scroll;
+  -ms-overflow-style: none;/*IE Edgexスクロールバー消去*/
+  scrollbar-width: none; /*firefoxスクロールバー消去*/
+}
+.guide::-webkit-scrollbar {
+  display:none;/*Chrome Safariスクロールバー消去*/
+}
+.guide p {
+  margin: 0; 
+  padding: 0;
+}
+div h1{
+  text-align: center;
+  margin-top: 0px;
+  font-size: x-large;
+}
+.guide section{
+  border-bottom: 2px dashed #333;
+}
+footer{
+  margin-top:  0px;
+  text-align: right;
+}
+section{
+  text-align: center;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 1em
+} 
+.tablehead{
+  text-align: center;
+  background-color: #999999;
+  color: #efefef;
+}
+table, td {
+  border: 1px solid #333;
+}
+thead,tfoot {
+  background-color: #333;
+  color: #fff;
+}   
+body > footer{
+  border-top: 3px solid #333;
+}
+footer h1{
+  /* margin: 0px; */
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+footer p{
+  text-align: center;
+  color: gray;
+}
+
+.blog {  
+  margin: 2%;
+  font-size:large;
+}
+
+.blog p{ 
+  margin: 0%;
+}
+/* ブログ文装飾 */
