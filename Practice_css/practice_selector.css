@@ -1,0 +1,66 @@
+/* h1 { */
+.info {
+  color: rgb(134, 57, 205);
+}
+
+.title {
+  font-weight: normal;
+}
+
+#title {
+  color: blue;
+}
+
+* {
+  color: brown;
+}
+
+[target] {
+  font-weight: bold;
+}
+
+[href="https://google.com"]
+{
+  font-size: large;
+}
+[href^="https"] {
+  background-color: aqua;
+}
+h1::before {
+  content: " -";
+}
+h1::after {
+  content: "- ";
+}
+li::before {
+  content: attr(data-subtitle);
+}
+.btn {
+  width: 100px;
+  background: rgb(108, 105, 251);
+  text-align: center;
+  padding: 4px;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+main > :nth-child(3) {
+  background: pink;
+}
+main > :nth-child(2n) {
+  background: skyblue;
+}
+main > :first-child {
+  background: rgb(149, 167, 175);
+}
+section > p:nth-of-type(3) {
+  color: black;
+}
+li:empty {
+  background-color: blueviolet;
+}
+ul:nth-of-type(3) > li:not(:empty) {
+  text-decoration: underline;
+}

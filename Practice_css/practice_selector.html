@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSSの練習</title>
+    <link rel="stylesheet" href="practice_selector.css" />
+  </head>
+  <body>
+    <!-- <h1>見出し</h1> -->
+    <h1 class="info title">見出し</h1>
+    <p class="info">こんにちは。こんにちは。こんにちは。こんにちは。</p>
+    <h2>見出し</h2>
+    <p>こんにちは。こんにちは。こんにちは。こんにちは。</p>
+    <h2 id="title">idセレクタ</h2>
+    <p>#idは 一つにしか使えない＆複数のクラスの重ね合わせにも使えない</p>
+    <p>全称セレクタは全てを対象とする</p>
+    <h2>属性セレクタ</h2>
+    <ul>
+      <li><a href="https://google.com" target="blank">googleへ</a></li>
+      <li><a href="https://yahoo.com">yahooへ</a></li>
+      <li>属性セレクタは属性で選べる</li>
+      <li>前方一致後方一致部分一致がある</li>
+    </ul>
+    <h2>疑似要素</h2>
+    <ul>
+      <li data-subtitle="メイン ">
+        ::before,::afterでその前後に入れることができる。
+      </li>
+      <li data-subtitle="サブ ">
+        また、data属性でattr()で指定すれば独自に指定した文字列を挿入できる
+      </li>
+    </ul>
+    <h2>疑似クラスと疑似属性</h2>
+    <div class="btn">OK</div>
+    <p>hoverで特定の状態でのCSSとなる</p>
+    <h2>:nth-child()</h2>
+    <main>
+      <p>:nth-child(3)</p>
+      <p>:nth-child(2n)</p>
+      <p>:nth-child(odd)</p>
+      <p>:first-child</p>
+    </main>
+    <h2>:nth-of-type</h2>
+    <ul>
+      <li>:nth-of-type(3)は要素の種類を指定できる</li>
+      <li></li>
+      <li>:emptyは空の物を指す</li>
+      <li>:not(:empty)その逆を指す</li>
+    </ul>
+    <h2>詳細度</h2>
+    <p>詳細度が高いほど優先される id(#の付くやつ) > クラス,属性,疑似クラス(.が付くやつ) > 要素,疑似要素(h1とかの実体)</p>
+        <p>html内でstyleを指定して書く場合はそれが優先して適用される</p>
+  </body>
+</html>

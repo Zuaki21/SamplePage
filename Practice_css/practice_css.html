@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>CSSの練習</title>
-  <link rel="stylesheet" href="practice_css.css">
-</head>
-<body>
-  <h1>CSSの練習</h1>
-  <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
-  <a href="https://www.google.com/">googleのリンク</a>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSSの練習</title>
+    <link rel="stylesheet" href="practice_css.css" />
+  </head>
+  <body>
+    <header>ヘッダー</header>
+    <h1>CSSの練習</h1>
+    <p class="underline">
+      こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
+    </p>
+    <a href="https://www.google.com/">googleのリンク</a>
 
-  <h2>リスト</h2>
-    <ul>
-    <li class="This">こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-    <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-    <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-  </ul>
-  <ol>
-    <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-    <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-    <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
-  </ol>
+    <h2>リスト</h2>
+    <ul class="PencilList">
+      <li class="This">
+        こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
+      </li>
+      <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
+      <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
+    </ul>
+    <ol>
+      <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
+      <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
+      <li>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</li>
+    </ol>
     <h2>インラインとブロック</h2>
-      <div class="box1">
-    <!-- Box 1 -->
-    <div class="box2">Box 2</div>
-  </div>
-  <div class="box3">Box 3</div>
-  <div class="box3">Box 3</div>
-  <div class="box3">Box 3</div>
-  <ul>
-    <li>blockは下に追加していく</li>
-    <li>inlineは左詰め</li>
-    <li>inline-blockは左詰め幅変更可</li> 
-  </ul>
-</body>
+    <div class="box1">
+      <!-- Box 1 -->
+      <div class="box2">Box 2</div>
+    </div>
+    <div class="box3">Box 3</div>
+    <div class="box3">Box 3</div>
+    <div class="box3">Box 3</div>
+    <ul>
+      <li>blockは下に追加していく</li>
+      <li>inlineは左詰め</li>
+      <li>inline-blockは左詰め幅変更可</li>
+      <li>noneにすると無かったことになる</li>
+    </ul>
+    <h2>position</h2>
+    <div class="box4">Box 4</div>
+    <div class="box5">Box 5</div>
+    <div class="box6">Box 6</div>
+    <ul>
+      <li>staticは初期位置</li>
+      <li>relativeは移動可</li>
+      <li>fixedはスクロールに関係なく位置固定<br />並びから外れた位置になる</li>
+    </ul>
+    <h2>絶対位置absolute</h2>
+    <div class="box7">
+      Box7
+      <div class="rect">rect</div>
+    </div>
+    <li>親要素がstaticなら初期位置からズラシタ配置に</li>
+    <li>relativeは親要素からズラシタ配置に</li>
+    <h2>z-index</h2>
+    <div class="box8">Box 8</div>
+    <div class="box9">Box 9</div>
+    <div class="box10">Box 10</div>
+    <p>z-indexが大きい方が前に来る</p>
+    <h2>box-sizing</h2>
+    <div class="box11">Box 11</div>
+    <p>
+      <code>border-sizing: border-box;</code
+      >とするとpaddingとborderを含めることになる
+    </p>
+    <h2>calc()とmargin: auto;</h2>
+    <div class="box12">box12</div>
+    <pre><code>
+width: calc((100% - 150px));
+margin: auto;
+      </code></pre>
+    calc()で計算式,autoで自動で場所調整
+    <h2>影</h2>
+    <div class="box13">Box13</div>
+    <h2>floatプロパティー</h2>
+    <p>
+      <img src="../img/pixiv.png/" height="100" />
+      float:rightとすると右側に対象が寄って、文字はそれに対して回り込むような形になる。こんな感じですねちなみにfloatプロパティが使えるのはブロックの要素だけ
+    </p>
+    <div class="clear">それを無視するように下に配置するためにはclear:rightで戻す～～～～～～～～～～～～～～～～～～～～～～</div>
+  </body>
 </html>
