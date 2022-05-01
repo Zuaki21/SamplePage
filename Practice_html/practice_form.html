@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>練習用フォーム部品編</title>
+  </head>
+
+  <body>
+    <h1>フォーム部品編</h1>
+
+    <h2>第一回</h2>
+    <p>&lt;input&gt;は小さめのテキストボックス</p>
+    <input type="text" />
+    <input type="text" value="hello" />
+    <input type="text" placeholder="Please enter your name" />
+    <p>type="password"</p>
+    <input type="password" />
+
+    <p>&lt;Textarea&gt;は大きめのテキストボックス</p>
+    <textarea></textarea>
+    <textarea>Hello</textarea>
+    <textarea placeholder="enter something"></textarea>
+
+    <hr />
+    <h2>第二回</h2>
+    <!-- <label for="name">名前</label>
+    <input type="text" id="name"> -->
+
+    <label>名前 <input type="text" /></label><br />
+    &lt;label&gt;で囲うとひとまとまりにできる(クリックしたときに入力位置にカーソルが行く)
+    <hr />
+    <h2>第三回</h2>
+    <label for="color">好きな色</label>
+    <select id="color" size="4" multiple>
+      <!-- <select id="color"> -->
+      <option>色1</option>
+      <option>色2</option>
+      <option>色3</option>
+      <option selected>色4</option>
+      <option>色5</option>
+      <option>色6</option>
+    </select>
+    <ul>
+      <li>multiple属性を付けるとctrl押しながらで複数選べる</li>
+      <li>selected属性で初期で選ばれているやつを指定</li>
+      <li>size属性で一度に表示する量を指定</li>
+    </ul>
+
+    <label for="color2">ドロップダウンリスト</label>
+    <select id="color2">
+      <option>色1</option>
+      <option>色2</option>
+      <option>色3</option>
+    </select>
+    <hr />
+    <h2>第四回</h2>
+    <p>チェックボックス</p>
+    <fieldset>
+      <legend>お使いのスマホ</legend>
+      <label><input type="checkbox" /> iPhone</label>
+      <label><input type="checkbox" checked /> Android</label>
+      <label><input type="checkbox" /> その他</label>
+    </fieldset>
+    <ul>
+      <li>&lt;fieldset&gt;はひとまとまりに</li>
+      <li>&lt;legend&gt;はひとまとまりの見出にし</li>
+    </ul>
+    <hr />
+    <h2>第五回</h2>
+    <p>ラジオボタン</p>
+    <fieldset>
+      <legend>お使いのスマホ</legend>
+      <label><input type="radio" name="phone" /> iPhone</label>
+      <label><input type="radio" name="phone" checked /> Android</label>
+      <label><input type="radio" name="phone" /> その他</label>
+    </fieldset>
+    name=""で指定したもの同士が同時に選べなくなる
+
+    <hr />
+    <h2>第六回</h2>
+    type=
+    <p>"color"<input type="color" /></p>
+    <p>"date"<input type="date" /></p>
+    <p>"number"<input type="number" /></p>
+    <p>"r"ange"<input type="range" /></p>
+
+    <hr />
+    <h2>第七回</h2>
+    <input type="button" value="OK" disabled />
+    <button>OK</button>
+    <ul>
+      <li>
+        &lt;button&gt;タグを使うとボタンの中に画像を入れることもできるので良い
+      </li>
+      <li>disabled属性で無効化</li>
+    </ul>
+
+    <hr />
+    <h2>第八回</h2>
+    formタグでname属性を付けて送ることができる(php,rubyで)
+    <form action="process.php" method="post">
+      <label>担当者名 <input type="text" name="username" /></label>
+      <label>タスク <input type="text" name="task" /></label>
+      <button>追加</button>
+    </form>
+  </body>
+</html>
