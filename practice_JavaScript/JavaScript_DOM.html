@@ -1,15 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>JavaScript Basics</title>
-</head>
-<body>
-  <h1 id="target">ドットインストール</h1>
-  <p>こんにちは。こんにちは。こんにちは。</p>
-  <p>こんにちは。こんにちは。こんにちは。</p>
-  <p>こんにちは。こんにちは。こんにちは。</p>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Basics</title>
+    <style>
+      .my-color {
+        color: red;
+        background-color: skyblue;
+      }
 
-  <script src="JavaScript_DOM.js"></script>
-</body>
+      .my-border {
+        border-bottom: 4px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="target" class="my-border" data-translation="Dotinstall">
+      ドットインストール
+    </h1>
+    <p>こんにちは。こんにちは。こんにちは。</p>
+    <p>こんにちは。こんにちは。こんにちは。</p>
+    <p>こんにちは。こんにちは。こんにちは。</p>
+    <button id="FirstButton">Run</button>
+    <hr />
+    <h2>要素の追加</h2>
+    <ul>
+      <li>youso</li>
+    </ul>
+    <button id="SecondButton">Run</button>
+    <hr />
+    <h2>要素の複製,挿入削除</h2>
+    <button id="ThirdButton">挿入</button>
+    <button id="DeleteButton">削除</button>
+    <ul>
+      <li>youso1</li>
+      <li>youso2</li>
+      <li>youso3</li>
+    </ul>
+    <hr />
+    <h2>inputを使ったやり方</h2>
+    <input type="text" />
+    <button id="WriteButton">追加</button>
+    <ul id="written"></ul>
+    <hr />
+    <h2>選択して追加</h2>
+    <select id="selector">
+      <option hidden>選択してください</option>
+      <option value="red">赤</option>
+      <option value="blue">青</option>
+      <option value="yellow">黄</option>
+    </select>
+    <button id="decideButton">決定</button>
+    <ul id="decideul"></ul>
+    <hr />
+    <h2>ラジオボタン</h2>
+    <fieldset>
+      <legend>お使いのスマホ</legend>
+      <label><input type="radio" name="phone" value="iPhone" /> iPhone</label>
+      <label><input type="radio" name="phone" value="Android" /> Android</label>
+      <label><input type="radio" name="phone" value="その他" />その他</label>
+      <button id="radioDecideButton">決定</button>
+      <ul id="radioUl"></ul>
+    </fieldset>
+    <h2>チェックボックス</h2>
+    <input type="checkbox" value="red" /> 赤
+    <input type="checkbox" value="blue" /> 青
+    <input type="checkbox" value="yellow" /> 黄
+    <button id="checkDecideButton">決定</button>
+    <ul id="checkUl"></ul>
+    <hr />
+    <h2>色んなイベント</h2>
+    <button id="variableButton">押す</button>
+    <p id="stateMessage">押す前</p>
+    <hr />
+    <h2>フォームに使われるイベント</h2>
+    <textarea></textarea>
+    <p id="formMessage">押す前</p>
+    <p id="formMessage2">入力する前</p>
+    <hr />
+    <h2>フォームの送信</h2>
+    <form>
+      <input type="text" />
+      <button>Post</button>
+    </form>
+    <p id="sMessage">フォームに入力して送信(Enterも可)</p>
+    <hr />
+    <h2>イベントの伝播</h2>
+    <style>
+      li {
+        cursor: pointer;
+      }
+      li.done {
+        text-decoration: line-through;
+      }
+    </style>
+    <ul id="spread">
+      <!-- e.currentTarget -->
+      <li>Todo</li>
+      <li>Todo</li>
+      <!-- e.target -->
+      <li>Todo</li>
+    </ul>
+    <script src="JavaScript_DOM.js"></script>
+  </body>
 </html>
