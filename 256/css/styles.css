@@ -1,0 +1,29 @@
+/* 右側の仕様を確認してここから実装してください */
+.box1{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: left;
+  border: 8px solid green;
+  box-sizing: border-box;
+}
+.box2{
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 8px solid purple;
+  box-sizing: border-box;
+}
+.box3{
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 100px;
+}
